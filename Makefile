@@ -1,2 +1,2 @@
-all:
-	gcc -Wall  geom.c tezt.c int.c -o test
+all: test
+	gcc -Wall  geom.c tezt.c per.c main.c -lm 
