@@ -4,23 +4,17 @@
 //#define Pi 3.14
 #include "geom.h"
 
-int main()
+int area(Circle* c, int j)
 {
-    int n, err, j;
-    printf("Введите количество кругов:\n");
-    err = scanf("%d", &n);
-    if (err != 1) {
-        printf("Введено неверно...\n");
-        exit(0);
-    }
-    // printf("Введите количество кругов: \n");
+    float area;
+      area = c->r[j] * c->r[j] * Pi;
+      return area;
 
-    for (j = 1; j <= n; j++) {
-        Circle first;
-        Input_circle(&first, j);
-        printf("P = 2 * PI * R = %.4f \n", first.R * 2 * Pi);
-        printf("S = PI * R * R = %.4f \n", first.R * first.R * Pi);
-    }
+}
 
-    return 0;
+int per(Circle* c, int j)
+{
+    float perimetr;
+      perimetr = c->r[j] * 2 * Pi;
+    return perimetr;
 }
