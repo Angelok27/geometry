@@ -4,6 +4,7 @@
 //#define Pi 3.14
 #include "geom.h"
 
+
 int area(Circle* c, int j)
 {
     float area;
