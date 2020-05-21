@@ -6,7 +6,7 @@
 
 int area(Circle* c, int j)
 {
-    float area
+    float area;
     area = c->r[j] * c->r[j] * Pi;
     return area;
 
